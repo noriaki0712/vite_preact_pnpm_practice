@@ -23,6 +23,6 @@
     },
     "noImplicitAny": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "src/stories/Page.stories.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
