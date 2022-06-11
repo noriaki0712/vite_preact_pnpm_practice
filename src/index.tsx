@@ -4,4 +4,5 @@ import "./style/index.css";
 import { setup } from "goober";
 
 setup(h);
+
 render(<App />, document.getElementById("app")!);
