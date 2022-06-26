@@ -5,11 +5,11 @@ import { useState, useCallback, FunctionComponent } from "preact/compat";
 export const Form: FunctionComponent = () => {
   const [input, setInput] = useState("");
   const onChange = useCallback(
-    ({ target }: React.ChangeEvent<HTMLInputElement>) => {
-      if (!(target instanceof HTMLInputElement)) {
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (!(e.target instanceof HTMLInputElement)) {
         return;
       }
-      setInput(target?.value);
+      setInput(e.target?.value);
     },
     [setInput]
   );

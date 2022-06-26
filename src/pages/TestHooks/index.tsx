@@ -1,11 +1,4 @@
-import {
-  FunctionComponent,
-  memo,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from "preact/compat";
+import { FunctionComponent, memo, useEffect, useState } from "preact/compat";
 
 type ChildProps = {
   count: number;

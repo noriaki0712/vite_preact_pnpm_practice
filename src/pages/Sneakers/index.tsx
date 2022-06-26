@@ -53,7 +53,6 @@ const FormPropaty = {
 type SProps = { scrollRef: MutableRef<React.RefObject<HTMLDivElement>[]> };
 const Sneaker: FunctionComponent<SProps> = ({ scrollRef }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const sliderRef = useRef<Slider>(null);
   const settings = {
     infinite: true,
     speed: 400,
@@ -74,7 +73,7 @@ const Sneaker: FunctionComponent<SProps> = ({ scrollRef }) => {
         />
       </$TopVideo>
       <h2 ref={scrollRef.current[0]}>PICKUP</h2>
-      <Slider ref={sliderRef} {...settings}>
+      <Slider {...settings}>
         {PickUp.map((pickup) => {
           return <Image src={pickup} />;
         })}
