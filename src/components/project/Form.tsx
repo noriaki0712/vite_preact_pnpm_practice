@@ -1,7 +1,6 @@
 import { AnimationButton } from "../parts/Button/button";
 import { InputWithLabel, Length } from "/components/parts/InputWithLbel";
-import { useState, useCallback } from "preact/compat";
-import { FunctionComponent } from "preact";
+import { useState, useCallback, FunctionComponent } from "preact/compat";
 
 export const Form: FunctionComponent = () => {
   const [input, setInput] = useState("");

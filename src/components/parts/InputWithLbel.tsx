@@ -1,11 +1,8 @@
 import React from "preact/compat";
 
 export const InputWithLabel = React.memo(
-  (prop: { onChange: (e: React.ChangeEvent<HTMLInputElement>) => void }) => {
-    const { onChange } = prop;
-
+  ({ onChange }: { onChange: () => void }) => {
     console.log("!!!!rendering InputWithLabel!!!!");
-
     return (
       <>
         <span>Label: </span>

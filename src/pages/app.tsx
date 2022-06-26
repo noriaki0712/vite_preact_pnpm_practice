@@ -1,11 +1,19 @@
 import { Form } from "/components/project/Form";
 import { ParentButton } from "/components/parts/Button/nestButton";
-export function App() {
+import React, { FunctionComponent } from "preact/compat";
+
+type Hoge = { hoge: string };
+
+export const App: FunctionComponent = () => {
   return (
-    <>
+    <React.Fragment>
       <p>Hello Vite + Preact + pnpm!</p>
-      <Form />
-      <ParentButton />
-    </>
+      <div>
+        <Form />
+      </div>
+      <ParentButton path="/sneaker" name="Go Web page!" />
+    </React.Fragment>
   );
-}
+};
+
+export default App;

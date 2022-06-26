@@ -1,8 +1,8 @@
 import { render, h } from "preact";
-import { App } from "/pages/app";
+import { Main } from "./router";
 import "./style/index.css";
 import { setup } from "goober";
 
 setup(h);
 
-render(<App />, document.getElementById("app")!);
+render(<Main />, document.getElementById("app")!);
